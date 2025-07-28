@@ -24,7 +24,7 @@
       display: block;
       width: 100%;
       max-width: 800px;
-      margin-bottom: 48px; /* ✅ 이미지 간 겹침 방지용 공간 확보 */
+      margin-bottom: 20px; /* ✅ 이미지 간격 20px */
     }
 
     .image-container img {
@@ -32,13 +32,7 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
-      will-change: transform;
-    }
-
-    .image-container img:hover {
-      transform: scale(1.025);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+      /* ✅ 확대 효과 제거: transform, hover 없음 */
     }
 
     @media (max-width: 767px) {
@@ -47,7 +41,7 @@
       }
 
       .image-container a {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
     }
   </style>
