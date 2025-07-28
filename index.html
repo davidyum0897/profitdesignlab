@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Profit Design Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .image-container a {
+      display: block;
+      max-width: 100%;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+
+    @media (min-width: 768px) {
+      .image-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Profit Design Lab</h1>
+  <div class="image-container">
+    <a href="https://open.kakao.com/o/sj0nuTGh" target="_blank">
+      <img src="image-1.png" alt="이미지1">
+    </a>
+    <a href="https://open.kakao.com/o/sj0nuTGh" target="_blank">
+      <img src="image-2.png" alt="이미지2">
+    </a>
+  </div>
+</body>
+</html>
